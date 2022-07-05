@@ -81,7 +81,7 @@ small{
     height: 5px;
     width: 150px;
     background: orange;
-    transform: translate(-235px, 56px);
+    transform: translate(-207px, 56px);
     margin-top: 2px;
 }
 .experienceArea h1{
@@ -128,13 +128,21 @@ footer p{
 @media (max-width:690px) {
     section {
         margin-bottom:40px;
+        padding:4%;
       }
       h1{
-        font-size: 45px;
+        font-size: 30px;
+        margin: 10px 0;
+      }
+      h3{
+        margin-bottom: 12px;
       }
     .headerArea {
         flex-wrap: wrap-reverse;
         
+      }
+      .orangeColor{
+        font-size: 35px;
       }
       .halfInfoSize {
         width: 100%;
@@ -151,6 +159,12 @@ footer p{
       }
       .DreamArea {
         flex-direction: column;
+      }
+      .experienceArea .experience-head {
+        font-size: 30px;
+      }
+      .experienceArea .experience-head::after {
+        transform: translate(-184px, 56px);
       }
       .experiencePart{
         margin-top: 60px;
@@ -173,9 +187,26 @@ footer p{
         margin-bottom: 25px;
       }
       .experienceArea .experience-head::after {
-        transform: translate(-244px, 56px);
+        transform: translate(-184px, 56px);
+      }
+      footer{
+        padding-bottom: 45px;
       }
 }
 @media (max-width:500px) {
-   
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .experiencePart h1 {
+    font-size: 18px;
+  }
+  .experiencePart h3 {
+    font-size: 14px;
+  }
 }
