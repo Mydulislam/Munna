@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Roboto Slab', serif;
@@ -16,8 +17,9 @@ h1{
     margin-bottom: 0;
 }
 p{
-    text-align: justify;
-    color:dimgray;
+  text-align: justify;
+  color: dimgray;
+  margin: 10px 0;
 }
 small{
     font-size: 12px;
@@ -34,8 +36,9 @@ small{
     padding: 3%;
     margin-top: 50px;
 }
-.orangeColor{
-    color:orange
+.orangeColor {
+  color: orange;
+  margin: 15px 0;
 }
 .hireLink{
     text-decoration: none;
@@ -123,7 +126,40 @@ footer p{
 }
 
 @media (max-width:947px) {
-  
+  h1 {
+    font-size: 30px;
+  }
+  h3{
+    margin:10px 0;
+  }
+  p {
+    margin: 15px 0;
+  }
+  .halfInfoSize {
+    padding: 2%;
+  }
+  .orangeColor {
+    margin: 15px 0;
+    font-size: 40px;
+  }
+  .experienceArea{
+    margin-bottom:10px;
+  }
+  .experienceArea .experience-head::after {
+    transform: translate(-168px, 56px);
+  }
+  .experiencePart{
+    gap:20px;
+  }
+  .experiencePart div {
+    margin:60px 0;
+  }
+  .experienceArea h1 {
+    font-size: 29px;
+  }
+  footer{
+    padding-bottom: 40px;
+  }
 }
 @media (max-width:690px) {
     section {
@@ -192,6 +228,15 @@ footer p{
       footer{
         padding-bottom: 45px;
       }
+}
+@media (max-width:650px) {
+  .experiencePart {
+    flex-direction: column;
+  }
+  .experiencePart p {
+    text-align: left;
+    padding: 12px;
+  }
 }
 @media (max-width:500px) {
   h1 {
