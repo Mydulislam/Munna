@@ -233,6 +233,9 @@ footer p{
   .experiencePart {
     flex-direction: column;
   }
+  #expart1{
+    margin-bottom: 20px;
+  }
   .experiencePart p {
     text-align: left;
     padding: 12px;
