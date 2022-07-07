@@ -69,7 +69,8 @@ small{
     text-align: center;
     position: relative;
 }
-.experienceArea .experience-head::before{
+.experienceArea .experience-head::before,
+.social-area h1::before{
     content: "";
     position: absolute;
     height: 5px;
@@ -78,13 +79,14 @@ small{
     transform: translateY(65px);
     margin-top: 2px;
 }
-.experienceArea .experience-head::after{
+.experienceArea .experience-head::after,
+.social-area h1::after{
     content: "";
     position: absolute;
     height: 5px;
     width: 150px;
     background: orange;
-    transform: translate(-207px, 56px);
+    transform: translate(-269px, 56px);
     margin-top: 2px;
 }
 .experienceArea h1{
@@ -105,7 +107,30 @@ small{
     border-left: 7px solid blue;
 }
 
-
+/* ====================================================
+  social part styling
+========================================================*/
+.social-area{
+  text-align: center;
+}
+.social-area h1{
+  position: relative;
+}
+.social-area .social-icon{
+  margin-top: 40px;
+}
+.social-area .social-icon a{
+  margin:20px;
+}
+.social-area .social-icon a img{
+  width: 50px;
+}
+.youtube{
+  width: 42px!important;
+}
+/* ======================================================
+footer styling 
+=========================================================*/
 footer p{
     text-align: center;
 }
@@ -225,6 +250,15 @@ footer p{
       .experienceArea .experience-head::after {
         transform: translate(-175px, 56px);
       }
+      .social-area .social-icon a {
+        margin: 3px;
+      }
+      .social-area h1::before {
+        transform: translateY(39px);
+    }
+    .social-area h1::after{
+      transform: translate(-135px, 48px);
+    }
       footer{
         padding-bottom: 45px;
       }
