@@ -106,7 +106,27 @@ small{
 #expart2{
     border-left: 7px solid blue;
 }
-
+/* ====================================================
+  Videos part styling
+========================================================*/
+.videos p{
+  text-align: center;
+  margin-top: 30px;
+}
+.video-margin{
+  border-radius: 5px;
+}
+.my-videos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.more-videos{
+  text-align: center;
+  margin-top:30px;
+}
 /* ====================================================
   social part styling
 ========================================================*/
